@@ -15,17 +15,19 @@ corresponding elements of data matrix.}
 \item{contraste}{a contrast vector or contrast matrix where the sum of each
 row is zero.}
 }
-\value{
-A list of class "mult_contrast" containing the following components:
-
-xbar.ip: a matrix of mean vectors of wich group; delta: a linear
-combination of the means; var.delta: a variance's matrix of delta; T2: the
-Hotelling t^2 value; wilks: the Wilk's Lambda value.
-}
 \description{
 This function applies a multivariate hypothesis test to compare means between groups
  according to a given vector or matrix of contrast.
 }
+\value{
+A list of class "mult_contrast" containing:
+
+\item{xbar.ip}{the matrix of mean vectors of wich group}
+\item{delta}{the linear combination of the means}
+\item{var.delta}{the variance's matrix of delta}
+\item{T2}{the Hotelling t² value}
+\item{wilks}{the Wilk's Lambda value}
+}
 \author{
-Gualberto Agamez Montalvo; Bruno Marinho Estevam de Oliveira
+Gualberto Segundo Agamez Montalvo; Bruno Marinho Estevam de Oliveira
 }
