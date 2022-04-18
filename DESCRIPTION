@@ -2,13 +2,14 @@ Package: MCCpca
 Type: Package
 Title: Multivariate Control Charts based on Principal Components
 Version: 0.5.0
-Author: Bruno Marinho
+Author: Gualberto Segundo Agamez Montalvo;
+        Bruno Marinho Estevam de Oliveira
 Maintainer: Bruno Marinho <myrindrius@gmail.com>
 Description: Draws Multivariate Control Charts based on Principal Components Analysis.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Imports: 
     REdaS,
     MSQC,
