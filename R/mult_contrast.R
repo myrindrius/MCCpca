@@ -10,7 +10,7 @@
 #'  row is zero.
 #'
 #' @returns
-#' A list of class "mult_contrast" containing the following components:
+#' A list of class "mult_contrast" containing
 #'
 #' @return xbar.ip: a matrix of mean vectors of wich group; delta: a linear
 #' combination of the means; var.delta: a variance's matrix of delta; T2: the
@@ -61,6 +61,11 @@ mult_contrast <- function(data,groups,contraste){
     p.value = 1 - stats::pf(approx.F,p,ve-p+1)
 
     #Resposta
+    cat("Multivariate Mean Comparison Test\n\n Hotelling T2 =", T2 ,
+        "\n Wilk's Lambda =", wilks,
+        "\n Approximation by F =",approx.F,
+        "\n p-value =",p.value)
+
     res <- structure(list(ybar.ip=ybar.ip,
                           delta=delta,
                           var.delta=var.delta,
