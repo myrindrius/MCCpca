@@ -22,5 +22,5 @@ pca_control_charts(Overtime,alpha = .05,scaled = TRUE)
 
 }
 \author{
-Gualberto Agamez Montalvo; Bruno Marinho Estevam de Oliveira
+Gualberto Segundo Agamez Montalvo; Bruno Marinho Estevam de Oliveira
 }
