@@ -21,7 +21,7 @@ pca_control_charts <- function(x,alpha = 0.05,scaled = FALSE){
   if(REdaS::bart_spher(x)$p.value<0.05){
     cp = stats::prcomp(x,scale. = scaled);
     graphics::par(mfrow = c(1, 2))
-    e = MSQC::ellip(type = "chi", cp$x[,1:2], alpha = alpha)
+    e = ellip(type = "chi", cp$x[,1:2], alpha = alpha)
     ylimit = max(cp$x[,2],e[,2])
     xlimit = max(cp$x[,1],e[,1])
     plot(e,
@@ -54,5 +54,6 @@ pca_control_charts <- function(x,alpha = 0.05,scaled = FALSE){
 
   }else{warning("The correlation matrix not diverges significantly from the identity matrix")}
 }
+
 
 
